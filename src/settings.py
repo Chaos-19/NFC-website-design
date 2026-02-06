@@ -124,3 +124,13 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 # Media files (User uploads)
 MEDIA_URL = 'media/'
 MEDIA_ROOT = BASE_DIR / 'media'
+
+# Chapa Payment Configuration
+# Get these from your Chapa dashboard: https://dashboard.chapa.co
+CHAPA_SECRET_KEY = 'CHASECK_TEST-Xt8KWd58iaw0BaDkAvvKiChEowWz3Fgo'  # Replace with your actual secret key
+CHAPA_PUBLIC_KEY = 'CHAPUBK_TEST-Q8GcQWlV4Evk2J9qdmPkNSvOI6gtEhbY'  # Replace with your actual public key
+
+# For production, use environment variables:
+# import os
+# CHAPA_SECRET_KEY = os.environ.get('CHAPA_SECRET_KEY')
+# CHAPA_PUBLIC_KEY = os.environ.get('CHAPA_PUBLIC_KEY')
